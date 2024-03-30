@@ -1,5 +1,5 @@
 # React Task Management Application Documentation
-Welcome to the documentation for the React Task Management Application. This guide will provide an overview of the application's features, components, and how to run it locally.
+The Task Management App simplifies task organization and tracking. With intuitive features and collaborative capabilities, users efficiently manage tasks for enhanced productivity.
 
 ## Features
 - Task Creation: Users can add new tasks by entering the task title, description, priority, and category.
