@@ -34,6 +34,7 @@ Clone this repository to your local machine.
 ## Technologies Used
 - React: Frontend library for building user interfaces.
 - React Router: For handling navigation within the application.
+
 Fetch: For making requests to the backend API.
 
 ### Usage
