@@ -4,16 +4,12 @@ import "./AddTask.css"
 const AddTask = () => {
     const [text,setText]=useState({title:"",description:"",priority:"",category:""})
     const handleChange=(e)=>{
-    //   console.log(e.target.value)
-    //   console.log(e.target.name)
       setText({...text,[e.target.name]:e.target.value})
     }
   
     const addTodo=async()=>{
-    // 
-    
     try {
-      const result=await fetch("http://localhost:4500/tasks/add",{
+      const result=await fetch("https://defiant-sweatshirt-elk.cyclic.app/tasks/add",{
         method:"POST",
         headers:{
           "Content-Type":"application/json",

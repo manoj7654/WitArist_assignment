@@ -1,0 +1,30 @@
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.table th,.table tr,.table td{
+ /* border: 1px solid grey; */
+ padding: 0.5rem;
+
+}
+
+.table th,.table tr:nth-child(even){
+    background-color: lightgray;
+
+}
+.sort {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort label {
+    margin-right: 10px;
+  }
+  
+  .sort select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
