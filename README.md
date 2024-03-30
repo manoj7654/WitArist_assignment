@@ -35,7 +35,7 @@ Clone this repository to your local machine.
 - React: Frontend library for building user interfaces.
 - React Router: For handling navigation within the application.
 
-Fetch: For making requests to the backend API.
+- Fetch: For making requests to the backend API.
 
 ### Usage
 - Navigate to the Task Management Application in your browser.
