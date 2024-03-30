@@ -6,14 +6,21 @@ const RenderTask = () => {
   const [task, setTask] = useState([]);
   const [filter, setFilter] = useState("");
   const [sortBy, setSortBy] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState(false);
   async function fetchTask() {
+    setLoading(true);
     try {
       const result = await fetch(`${url}/allTask`);
 
       const res = await result.json();
       setTask(res);
+      setLoading(false);
+      setErr(false);
     } catch (error) {
       console.log(error);
+      setLoading(false);
+      setErr(true);
     }
   }
   const handleDelete = async (_id) => {
@@ -108,7 +115,11 @@ const RenderTask = () => {
       })
     : filteredTasks;
 
-  return (
+  return loading ? (
+    <h1>Loading...</h1>
+  ) : err ? (
+    <h1>Something went wrong</h1>
+  ) : (
     <div>
       <h1>Task List</h1>
       <div className="sort">
