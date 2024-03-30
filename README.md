@@ -44,4 +44,4 @@ Clone this repository to your local machine.
 
 ### Deployed Link
 
-[Live](https://task-a3k0sgcbx-manoj7654s-projects.vercel.app/)
+[Live](https://task-b4x6m8qzz-manoj7654s-projects.vercel.app)
